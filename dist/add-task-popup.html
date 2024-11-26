@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/add-task-popup.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname" class="task-name-label">Task Name</label>
+                <input type="text" id="fname" name="firstname" class="task-name-input" placeholder="Your name..">
+                <label for="country" class="project-label">Project</label>
+                <select id="country" name="country" class="project-select">
+                    <option value="Project 1">Project 1</option>
+                    <option value="Project 2">Project 2</option>
+                    <option value="Project 3">Project 3</option>
+                </select>
+                <label for="duedate" class="due-date-label">Due Date</label>
+                <input type="date" id="duedate" name="duedate" class="due-date-input">
+                <label for="subject" class="description-label">Description</label>
+                <textarea id="subject" name="subject" class="description-textarea"
+                    placeholder="Write something.."></textarea>
+                <div class="btn-group">
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <input type="submit" value="Cancel" class="cancel-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+        window.onload = function () {
+            animateForm();
+        }
+
+        function animateForm() {
+            const formWrapper = document.querySelector('.form-wrapper');
+            formWrapper.style.opacity = '0';
+            formWrapper.style.transform = 'scale(0.5)';
+
+            formWrapper.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+            setTimeout(() => {
+                formWrapper.style.opacity = '1';
+                formWrapper.style.transform = 'scale(1)';
+            }, 100);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+.container {
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.task-name-label,
+.project-label,
+.due-date-label,
+.description-label {
+    margin: 0;
+    width: 100%;
+}
+
+.task-name-input,
+.project-select,
+.due-date-input,
+.description-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.description-textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submit-btn,
+.cancel-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.submit-btn:hover,
+.cancel-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
