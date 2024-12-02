@@ -1,139 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management</title>
-    <link rel="stylesheet" href="dist/css/home_style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-digital-trend.css">
 </head>
-
 <body>
-    <!-- start nav -->
-    <nav class="sticky">
-        <div class="logo">
-            <img src="dist/assets/img/beforthelast-removebg-preview.png" alt="Tasks Icon">
-        </div>
-        <div class="navsign">
-            <a href="#main"><span>Home</span></a>
-            <a href="#contact"><span>Contact</span></a>
-            <a href="dist/login_index.html"><span>Join Us</span></a>
-        </div>
-    </nav>
-    <!-- end nav -->
 
-    <!-- start Main Section -->
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-line-chart"></i>
+                Task Management
+            </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div id="main" class="main">
-        <div class="info">
-            <h2 class="welcom">Welcome to</h2>
-            <h1 style="color: #769FCD; "><b>Task management </b></h1>
-            <p class="thetxt">Managing tasks through their various stages from start to finish while maintaining the
-                required time commitment.</p>
-            <button><a href="dist/login_index.html"><span style="color: white;">Join Us</span></a></button>
-        </div>
-        <div class="img">
-            <img src="dist/assets/img/Task-cuate.png" alt="Task Illustration">
-        </div>
-    </div>
-    <!--end Main Section -->
-
-    
-    <!-- ABOUT US SECTION -->
-    <section class="aboutSecAll">
-
-        <h1 style="color: #769FCD; text-align: center; ">ABOUT US</h1>
-        <p id="aboutsection">Welcome to Tasks Buddy, your dedicated companion for managing and organizing your projects efficiently. Our mission is to streamline your workflow, helping you stay on top of your tasks and deadlines with ease.</p>
-
-    </section>
-    <!-- Dashboard view Section -->
-     
-    <section class="sec3">
-        <div class="img" id="theimg1">
-            <img src="dist/assets/img/dashboard.png" alt="Dashboard view">
-        </div>
-        </div>
-    </section>
-    <!-- START List -->
-    <div class="container">
-        <div class="card">
-            <h2>Who We Are?</h2>
-            <p>At Tasks Buddy, we believe in the power of organization and the impact it can have on productivity. We are a team of passionate developers and productivity enthusiasts who have come together to create a tool that not only helps you manage your tasks but also enhances your overall project management experience.</p>
-        </div>
-
-        <div class="card">
-            <h2>What We Do?</h2>
-            <p>Tasks Buddy is designed to be your go-to platform for tracking and managing your projects. Our key features include:</p>
-            <ul>
-                <li><strong>Project Tracking:</strong> Keep a detailed log of all your projects and their statuses.</li>
-                <li><strong>Task Management:</strong> Easily add, edit, and manage tasks within each project.</li>
-                <li><strong>Progress Monitoring:</strong> Visualize your progress with clear and intuitive interfaces.</li>
-                <li><strong>History Log:</strong> Keep track of your project's history and important dates.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Our Vision</h2>
-            <p>We aim to become the leading task management tool that caters to the needs of both individuals and teams. Our goal is to continuously improve our platform by integrating user feedback and implementing innovative features that make task management effortless.</p>
-        </div>
-    </div>    
-    <!-- END List -->
-
-
-
-
-    <!-- Connect with Us Section -->
-
-    <section id="contact" class="lastsec">
-        <div class="main">
-            <div class="info">
-                <h2 style="color: #769FCD;">Connect with Us</h2>
-                <p class="thetxt">Managing tasks through their various stages from start to finish, while maintaining the required time commitment</p>
-                <div class="img">
-                    <img src="./dist/assets/img/Telecommuting-rafiki.png" alt="Progress Tracking Illustration">
-                </div>
-            </div>
-    
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h3>About Us</h3>
-                <p class="theFootAboutTxt">We are dedicated to helping you manage your tasks<br> efficiently and achieve
-                    your goals with ease.</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#main">Home</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="dist/login_index.html">Log In</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">Our Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="dist/login_index.html" class="nav-link">Join Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Task Buddy. All rights reserved.</p>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero hero-bg d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">Welcome to <strong>Task Management</strong></h1>
+                        <p data-aos="fade-up" data-aos-delay="100" style="color: white;">
+                            Managing tasks through their various stages from start to finish while maintaining the required time commitment.
+                        </p>
+                        <a href="dist/login_index.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="200">Join Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                        <img src="dist/assets/img/Task-cuate.png" class="img-fluid" alt="Task Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-padding pb-0" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <div class="about-info">
+                        <h2 class="mb-4" data-aos="fade-up">About <strong>Task Management</strong></h2>
+                        <p data-aos="fade-up" data-aos-delay="100">
+                            Welcome to Tasks Buddy, your dedicated companion for managing and organizing your projects efficiently.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="200">
+                            We aim to streamline your workflow, helping you stay on top of your tasks and deadlines with ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-12" data-aos="fade-up">
+                    <img src="dist/assets/img/dashboard.png" class="img-fluid" alt="Dashboard View">
+                </div>
+                <!-- <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/office.png" class="img-fluid" alt="Office">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="project section-padding" id="project">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <h2 class="mb-5 text-center" data-aos="fade-up">
+                        Our <strong>Vision</strong>
+                    </h2>
+                    <p class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        Our goal is to continuously improve our platform by integrating user feedback and implementing innovative features that make task management effortless.
+                    </p>
+                    <br>
+                    <div class="owl-carousel owl-theme" id="project-slide">
+                        <!-- <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <img src="images/project/project-image01.jpg" class="img-fluid" alt="Project Image 1">
+                        </div> -->
+                        <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="200">
+                            <img src="images/project/project-image02.jpg" class="img-fluid" alt="Project Image 2">
+                        </div>
+                        <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="300">
+                            <img src="images/project/project-image03.jpg" class="img-fluid" alt="Project Image 3">
+                        </div>
+                        <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="400">
+                            <img src="images/project/cccc.png" class="img-fluid" alt="Progress Tracking Illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial section-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                    <div class="contact-image" data-aos="fade-up">
+                        <img src="dist/assets/img/Telecommuting-rafiki.png" class="img-fluid" alt="Contact Us">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7 col-12">
+                    <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Connect with Us</h4>
+                    <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control mb-3" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control mb-3" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="form-control mb-3" required></textarea>
+                        <button type="submit" class="custom-btn btn-bg btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mx-lg-auto col-md-8 col-12">
+                    <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">
+                        Let's <strong>Stay Productive</strong> Together.
+                    </h1>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="my-4">Contact Info</h4>
+                    <p>
+                        <i class="fa fa-envelope mr-2"></i>
+                        hello@taskbuddy.com
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
-
-
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
     
-</body>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // إظهار الزر عند التمرير
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // وظيفة العودة إلى الأعلى
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+
+    </script>
+</body>
 </html>
